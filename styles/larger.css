@@ -1,0 +1,58 @@
+@media screen and (min-width: 950px) {
+
+    header,
+    footer,
+    nav,
+    main {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        padding-top: 100px;
+    }
+
+    img {
+        float: left;
+        padding: 50px 25px 50px 50px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul.open {
+        flex-direction: row;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    ul,
+    li,
+    a {
+        padding: 0px;
+        font-size: 1em;
+    }
+
+    li {
+        padding: 5px;
+    }
+
+    iframe {
+        width: 700px;
+    }
+
+    #overlay {
+        left: 300px;
+        top: 100px;
+    }
+}
