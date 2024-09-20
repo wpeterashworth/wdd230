@@ -16,9 +16,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/visits.js" defer></script>
 </head>
 
 <body>
@@ -27,8 +24,7 @@
             <img src="images/pictureofme.jpeg" alt="Peter Ashworth headshot">
             <h1>Peter Ashworth</h1>
         </header>
-        <button id="menu-button"> Menu</button>
-        <nav class="navMenu">
+        <nav>
             <ul>
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
@@ -40,46 +36,15 @@
             </ul>
         </nav>
         <main>
-            <div class="hero">
-                <picture id="temple-image">
-                    <source media="(min-width: 800px)" srcset="images/temple-hero-landscape.webp">
-                    <source media="(min-width: 400px)" srcset="images/temple-hero-mobile.webp">
-                    <img src="images/temple-hero.webp" alt="picture of Oakland Temple">
-                </picture>
-                <div id="overlay">
-                    <p>
-                        Oakland Temple
-                    </p>
-                </div>
-            </div>
             <h2>WDD 230: Web Frontend Development I</h2>
             <hr>
-            <section class="card">
+            <section>
                 <h3>Learning Activities</h3>
                 <ul>
                     <li>Week 1:</li>
-                    <li><a href="lesson01/holygrail.html">Holy Grail Layout</a></li>
-                    <li>Week 2:</li>
-                    <li><a href="lesson02/media-query.html">Media Query Example</a></li>
-                    <li><a href="lesson02/design-principles.html">Design Principles Document</a></li>
-                    <li><a href="lesson02/design.html">Design Principles Template</a></li>
-                    <li>Week 3:</li>
-                    <li><a href="https://codepen.io/wpeterashworth/pen/LYoPvjW">Pseudo Element Codepen</a></li>
-                    <li><a href="https://codepen.io/wpeterashworth/pen/RwmbOMM">Hamburger Menu Codepen</a></li>
-                    <li>Week 4:</li>
-                    <li><a href="https://codepen.io/wpeterashworth/pen/oNRgKEx">CSS Pseudo Classes Codepen</a></li>
-                    <li>Week 5:</li>
-                    <li><a href="lesson05/bom.html">Book of Mormon Favorite Chapters JS</a></li>
-                    <li>Week 6:</li>
-                    <li><a href="lesson06/images/castle.webp">WebP Image</a></li>
-                    <li>Week 7:</li>
-                    <li><a href="lesson07/lazyload.htmlLazy">Lazy Loading Example</a></li>
-                    <li>Week 8:</li>
-                    <li><a href="lesson08/tablebuild.html">Table Example</a></li>
-                    <li><a href="form.html">Form Example</a></li>
                 </ul>
             </section>
-            <section class="card">
+            <section>
                 <h3>Information</h3>
                 <p>Weather: <span id="weather">Placeholder</span></p>
                 <p>Number of Visits: <span id="visits">Placeholder</span></p>
@@ -87,10 +52,6 @@
                 <p>Hometown: Clayton, CA</p>
             </section>
         </main>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50346.89401232442!2d-121.97537921990322!3d37.937885092105354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80855f14b67616cf%3A0x295cbc08ab4cf04!2sClayton%2C%20CA!5e0!3m2!1sen!2sus!4v1715193197066!5m2!1sen!2sus"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
         <footer>
             <p id="date"></p>
             <p>Last Modified:</p>

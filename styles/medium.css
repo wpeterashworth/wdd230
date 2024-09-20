@@ -1,16 +1,7 @@
 @media screen and (min-width: 600px) {
 
-    iframe {
-        width: 100%;
-    }
-
     img {
         padding-left: 0px;
-    }
-
-    #temple-image {
-        margin: 0 auto;
-        display: flex;
     }
 
 }

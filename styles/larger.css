@@ -28,14 +28,6 @@
         justify-content: space-around;
     }
 
-    nav ul.open {
-        flex-direction: row;
-    }
-
-    #menu-button {
-        display: none;
-    }
-
     ul,
     li,
     a {
@@ -45,14 +37,5 @@
 
     li {
         padding: 5px;
-    }
-
-    iframe {
-        width: 700px;
-    }
-
-    #overlay {
-        left: 300px;
-        top: 100px;
     }
 }

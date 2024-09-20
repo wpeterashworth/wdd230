@@ -40,36 +40,9 @@ nav {
     border-width: .4em;
 }
 
-#menu-button {
-    cursor: pointer;
-    background-color: var(--accent-color);
-    border: none;
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
-}
-
-#menu-button:hover {
-    background-color: var(--header-color);
-}
-
-#menu-button::before {
-    content: "Open";
-}
-
-#menu-button.open::before {
-    content: "Close";
-}
 
 nav ul {
     padding-inline-start: 0px;
-    display: none;
-}
-
-nav ul.open {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 ul,
@@ -114,11 +87,6 @@ a:hover {
     color: #7EA8BE;
 }
 
-.card,
-ul {
-    list-style-type: none;
-}
-
 h2 {
     padding-top: 25px;
 }
@@ -126,13 +94,6 @@ h2 {
 h3 {
     background-color: #7EA8BE;
     padding: 15px;
-}
-
-.card {
-    border-style: outset;
-    border-width: .25em;
-    margin: 10px;
-    padding: 10px;
 }
 
 footer {
@@ -145,54 +106,4 @@ footer {
 
 hr {
     margin: 20px;
-}
-
-iframe {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 90%;
-}
-
-#overlay {
-    padding: 7px;
-    color: black;
-    background-color: var(--header-color);
-    font-weight: bold;
-    position: absolute;
-    border-style: solid;
-    border-width: 2px;
-    left: 50px;
-    top: 75px;
-    opacity: 0.75;
-    border-radius: 10px;
-}
-
-input {
-    display: block;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    padding: .3rem;
-}
-
-label {
-    display: block;
-    padding: 10px;
-}
-
-button {
-    font-size: 1.5rem;
-    background-color: var(--accent-color2);
-    padding: .3rem;
-}
-
-.form-main {
-    text-align: left;
 }
