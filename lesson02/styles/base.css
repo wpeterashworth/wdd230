@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* colors: anti-flash white #E7ECEF     Raisin Black #272932    Carribean Current #0F7173     Buff #D8A47F*/
+
+:root {
+    --background-color: #E7ECEF;
+    --background-color2: #D8A47F;
+    --text-color: #272932;
+    --accent-color: #0F7173;
+}
+
+#content {
+    margin: 0;
+    padding: 0;
+    background-color: #E7ECEF;
+    font-family: "Lato", "Open Sans";
+}
+
+main,
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header,
+h1 {
+    text-align: center;
+    background-color: #D8A47F;
+    padding: 15px;
+    margin: 25px;
+}
+
+.card1,
+.card2,
+.card3 {
+    border-style: inset;
+    border-width: 5px;
+    margin: 25px;
+}
+
+h2,
+.subheading {
+    text-align: center;
+}
+
+.subheading {
+    font-size: 1.25em;
+    padding: 20px;
+}
+
+h2 {
+    background-color: #D8A47F;
+}
+
+a,
+img {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.description {
+    padding: 25px;
+    color: #272932
+}
+
+a {
+    color: #0F7173;
+    text-decoration: none;
+    font-size: 1.12em;
+}
+
+a:hover {
+    color: var(--background-color2);
+}
+
+img {
+    height: auto;
+    width: auto;
+    object-fit: cover;
+}

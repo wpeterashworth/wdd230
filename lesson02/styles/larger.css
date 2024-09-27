@@ -1,0 +1,11 @@
+@media screen and (min-width: 1100px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0px 1fr;
+    }
+
+    .card3 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+}
