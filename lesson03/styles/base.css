@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --background-color: #F5F1E3;
+    --header-color: #99C1B9;
+    --accent-color: #EAEFB1;
+    --accent-color2: #284B63;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+#content {
+    font-family: Nunito, Inter, sans-serif;
+}
+
+hr {
+    margin-bottom: 25px;
+}
+
+header,
+footer {
+    background-color: var(--header-color);
+    text-align: center;
+    padding: 10px;
+    border: inset;
+}
+
+footer p {
+    padding: 0px;
+    text-indent: 0px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0px;
+    padding-top: 10px;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+nav {
+    padding-bottom: 15px;
+    border: inset;
+    border-radius: 10px;
+    background-color: var(--accent-color2);
+}
+
+.active {
+    text-decoration: underline;
+    color: white;
+}
+
+.active a:hover {
+    color: white;
+}
+
+p {
+    padding-left: 15px;
+    padding-right: 10px;
+    text-indent: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.border-section {
+    border-radius: 20px;
+    border-style: outset;
+    border-width: 5px;
+    border-color: var(--header-color);
+}
+
+.typography {
+    text-align: center;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: var(--background-color);
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.background {
+    background-color: var(--background-color);
+    border-style: solid;
+}
+
+.header {
+    background-color: var(--header-color);
+}
+
+.accent {
+    background-color: var(--accent-color);
+}
+
+.accent-two {
+    background-color: var(--accent-color2);
+    color: var(--background-color);
+}
