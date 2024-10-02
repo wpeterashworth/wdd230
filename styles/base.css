@@ -19,11 +19,6 @@ body {
     font-family: Montserrat, Karla, sans-serif;
 }
 
-/* #form-content {
-    background-color: #F6F0ED;
-    font-family: Montserrat, Karla, sans-serif;
-} */
-
 header {
     background-color: #7EA8BE;
     text-align: center;
@@ -44,6 +39,7 @@ nav {
 nav ul {
     padding-inline-start: 0px;
     list-style-type: none;
+    display: none;
 }
 
 ul,
@@ -109,4 +105,37 @@ footer {
 
 hr {
     margin: 20px;
+}
+
+#menu {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+}
+
+#menu:hover {
+    background-color: var(--header-color);
+}
+
+#menu::before {
+    content: "Open";
+}
+
+#menu.open::before {
+    content: "Close";
+}
+
+nav ul.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
 }
