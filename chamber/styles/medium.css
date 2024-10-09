@@ -1,0 +1,78 @@
+@media screen and (min-width: 900px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #main-home {
+        grid-template-rows: 1fr 1fr 5% 1fr;
+        grid-template-columns: 1fr 25% 25% 25% 1fr;
+    }
+
+    .hero {
+        grid-column: 2/5;
+    }
+
+    #weatherCard {
+        grid-column: 4/6;
+        grid-row: 2;
+        margin: 35px;
+        margin-bottom: 7px;
+        padding: 45px;
+    }
+
+    #currentEvents {
+        grid-column: 1/4;
+        margin: 35px;
+        padding: 20px;
+    }
+
+    .spotlight1,
+    .spotlight2,
+    .spotlight3 {
+        border-style: ridge;
+        grid-row: 4;
+        margin: 10px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .spotlight1 {
+        grid-column: 2;
+    }
+
+    .spotlight2 {
+        grid-column: 3;
+    }
+
+    .spotlight3 {
+        grid-column: 4;
+    }
+
+    .spotlight-heading {
+        grid-row: 3;
+        grid-column: 2/5;
+        padding-bottom: 100px;
+    }
+
+    header,
+    footer {
+        max-width: 90%;
+    }
+
+    .heading {
+        padding: 20px;
+    }
+
+    .section1,
+    .section2,
+    .section3 {
+        grid-column: 1;
+        margin-right: 5px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+}
