@@ -81,13 +81,12 @@ a {
     color: black;
 }
 
-nav,
-a:hover {
+nav a:hover {
     color: #7EA8BE;
 }
 
-h2 {
-    padding-top: 25px;
+li a:hover {
+    color: #7EA8BE;
 }
 
 h3 {

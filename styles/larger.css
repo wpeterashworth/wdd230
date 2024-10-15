@@ -36,7 +36,7 @@
     main {
         display: grid;
         grid-template-columns: 2fr;
-        grid-template-rows: 25px 1fr;
+        grid-template-rows: 75px 1fr;
     }
 
     .information {
@@ -48,8 +48,8 @@
     .activities {
         grid-column: 2/3;
         grid-row: 2;
-        border: solid;
-        border-left: none;
+        border: ridge;
+        border-width: 10px;
     }
 
     .activities ul {
