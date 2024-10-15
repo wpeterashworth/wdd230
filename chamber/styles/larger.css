@@ -54,4 +54,9 @@
     .spotlight-heading {
         grid-column: 1/4;
     }
+
+    #darkMode {
+        top: 34px;
+        right: 64px;
+    }
 }

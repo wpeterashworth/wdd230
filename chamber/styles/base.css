@@ -202,3 +202,17 @@ nav ul .active:hover {
 #menu-button.open::before {
     content: "Close";
 }
+
+#darkMode {
+    position: absolute;
+    top: 16px;
+    right: 10px;
+}
+
+#darkMode::before {
+    content: "Dark"
+}
+
+#darkMode.dark::before {
+    content: "Light"
+}

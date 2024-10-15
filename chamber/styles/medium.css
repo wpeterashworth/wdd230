@@ -79,4 +79,9 @@
         display: none;
     }
 
+    #darkMode {
+        top: 22px;
+        right: 62px;
+    }
+
 }
