@@ -77,4 +77,9 @@
         width: 100%;
         height: auto;
     }
+
+    #overlay {
+        left: 300px;
+        top: 100px;
+    }
 }
