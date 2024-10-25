@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
     <title>Coruscant Chamber of Commerce</title>
 </head>
 
@@ -69,9 +70,9 @@
             <section id="weatherCard">
                 <h2>Weather</h2>
                 <p>Current Conditions:</p>
-                <p>Temperature:</p>
-                <p>Current Wind:</p>
-                <p>Windchill:</p>
+                <p>Temperature: <span id="temperature">40</span>&deg;F</p>
+                <p>Current Wind: <span id="windspeed">4</span></p>
+                <p>Windchill: <span id="windchill"></span></p>
             </section>
             <h2 class="spotlight-heading">Company Spotlights</h2>
             <div class="spotlight spotlight1">
