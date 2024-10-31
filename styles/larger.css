@@ -42,7 +42,8 @@
     .information {
         grid-column: 1/2;
         grid-row: 2;
-        border: solid;
+        border: ridge;
+        border-width: 10px;
     }
 
     .activities {
