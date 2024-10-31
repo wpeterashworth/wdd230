@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
 
     nav ul {
         display: flex;
@@ -82,6 +82,89 @@
     #darkMode {
         top: 22px;
         right: 62px;
+    }
+
+    .jedi-temple-image,
+    .market-image {
+        max-width: 150px;
+    }
+
+    .heading {
+        padding: 20px;
+    }
+
+    #main-discover {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 15px 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #discover-message {
+        grid-row: 1;
+        grid-column: 1/2;
+    }
+
+    .section1,
+    .section2,
+    .section3 {
+        grid-column: 1;
+        margin-right: 5px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5,
+    .image6 {
+        grid-column: 2;
+        padding: 0px;
+    }
+
+    .figure1 {
+        grid-row: 2;
+    }
+
+    .figure2 {
+        grid-row: 3;
+    }
+
+    .figure3 {
+        grid-row: 4;
+    }
+
+    .figure4 {
+        grid-row: 5;
+    }
+
+    .figure5 {
+        grid-row: 6;
+    }
+
+    .figure6 {
+        grid-row: 7;
+    }
+
+    .section1 {
+        grid-row: 2/4;
+    }
+
+    .section2 {
+        grid-row: 4/6
+    }
+
+    .section3 {
+        grid-row: 6/8;
+    }
+
+    figcaption {
+        padding: 25px;
+    }
+
+    img:hover {
+        box-shadow: 0 0 50px #333;
     }
 
 }

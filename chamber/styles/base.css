@@ -216,3 +216,60 @@ nav ul .active:hover {
 #darkMode.dark::before {
     content: "Light"
 }
+
+.market-image {
+    max-width: 100px;
+}
+
+.jedi-temple-image {
+    max-width: 150px;
+}
+
+.spotlight-heading {
+    color: var(--text-color1);
+    grid-row: 4;
+    grid-column: 2/5;
+}
+
+.discover-image img {
+    transition: 2s;
+}
+
+.discover-image img:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+#discover-message {
+    text-align: center;
+    color: var(--text-color1);
+    font-weight: bold;
+}
+
+.section1,
+.section2,
+.section3 {
+    border-style: groove;
+    text-align: center;
+    margin: 50px;
+    background-color: var(--accent-color);
+    color: var(--text-color2);
+    padding: 50px;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6 {
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    color: var(--text-color1);
+    font-weight: bold;
+}
