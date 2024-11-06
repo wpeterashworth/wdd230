@@ -83,4 +83,8 @@
         left: 300px;
         top: 100px;
     }
+
+    .form-main {
+        display: block;
+    }
 }
