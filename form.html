@@ -44,12 +44,12 @@
                 <fieldset>
                     <legend>Applicant Information</legend>
                     <label>Username* <input type="text" name="username" id="username" required></label>
-                    <label>Password* <input type="text" name="password" id="password" required pattern="[A-Za-z0-9]{8,}"
-                            placeholder="8 alphanumeric characters"> </label>
-                    <label>Confirm Password* <span id="message"></span> <input type="text" name="password" id="confirm"
-                            required pattern="[A-Za-z0-9]{8,}"> </label>
+                    <label>Password* <input type="password" name="password" id="password" required
+                            pattern="[A-Za-z0-9]{8,}" placeholder="8 alphanumeric characters"> </label>
+                    <label>Confirm Password* <span id="message"></span> <input type="password" name="password"
+                            id="confirm" required pattern="[A-Za-z0-9]{8,}"> </label>
                     <label>Email* <input type="email" name="email" id="email" placeholder="someone@byui.edu" required
-                            pattern=".+@byui\.edu"></label>
+                            pattern=".+@byui\.edu" title="valid byui address"></label>
                 </fieldset>
                 <label for="r">Rating</label>
                 <div id="rangevalue">0</div>

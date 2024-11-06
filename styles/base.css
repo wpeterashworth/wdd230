@@ -208,7 +208,7 @@ button {
 }
 
 .form-main input:required {
-    border-right: solid 8px #28536B
+    border-right: solid 8px var(--accent-color);
 }
 
 .form-main input:required:valid {
