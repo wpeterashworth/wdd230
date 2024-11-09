@@ -170,16 +170,6 @@
     .benefits {
         display: grid;
         grid-column: 2;
-        padding: 30px;
-    }
-
-    .non-profit,
-    .bronze,
-    .silver,
-    .gold {
-        border: outset;
-        color: var(--text-color1);
-        padding: 0px 20px 0px 20px;
     }
 
     .join-page-main {
@@ -194,10 +184,5 @@
     .form-main fieldset {
         margin: 10px;
         margin-top: 55px;
-    }
-
-    h2 {
-        text-align: center;
-        color: var(--text-color1);
     }
 }

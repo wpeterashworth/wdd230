@@ -286,10 +286,6 @@ figcaption {
     max-width: 150px;
 }
 
-.benefits {
-    display: none;
-}
-
 .form-main fieldset {
     border: 1px solid lightgrey;
     border-radius: 6px;
@@ -319,7 +315,7 @@ figcaption {
 .form-main input[type="date"],
 .form-main select,
 .form-main input[type="number"],
-.form-main input[type="textarea"] {
+.form-main textarea {
     background-color: #eee;
     display: block;
     border: solid 1px #999;
@@ -366,4 +362,22 @@ figcaption {
 h3 {
     text-align: center;
     color: var(--text-color1)
+}
+
+.benefits {
+    padding: 30px;
+}
+
+.non-profit,
+.bronze,
+.silver,
+.gold {
+    border: outset;
+    color: var(--text-color1);
+    padding: 0px 20px 0px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-color1);
 }
