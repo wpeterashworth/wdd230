@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Peter Ashworth - Chamber of Commerce Site">
+    <meta name="author" content="Peter Ashworth">
+    <meta property="og:title" content="Peter Ashworth WDD230 Chamber of Commerce Site">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://wpeterashworth.github.io/wdd230/images/hometown-photo.jpeg">
+    <meta property="og:url" content="https://wpeterashworth.github.io/wdd230/chamber/index.html">
+    <link rel="icon" href="images/favicon4.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/header-footer.js" defer></script>
+    <title>Coruscant Chamber of Commerce</title>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <button id="darkMode" title="Dark Mode"></button>
+            <h1>Coruscant Galactic City Chamber of Commerce</h1>
+            <button id="menu-button"> Menu</button>
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lesson03/chamber-site-plan.html">Site Plan</a></li>
+                    <li><a href="index.html">Chamber</a></li>
+                    <li><a href="https://www.byui.edu">BYU-Idaho</a></li>
+                    <li><a
+                            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/3?id=p27-p30&lang=eng#p27">Favorite
+                            Scripture</a>
+                    </li>
+                    <li><a href="discover.html">Discover Page</a></li>
+                    <li class="active"><a href="#">Join Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="join-page-main">
+            <form action="thankyou.html" method="get" class="form-main">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Position Title* <input type="text" name="position" id="position" required
+                            pattern="[A-Za-z0-9 ]{7,}"></label>
+                    <label>Email* <input type="email" name="email" id="email" required
+                            placeholder="someone@gmail.com"></label>
+                    <label>Phone Number* <input type="tel" name="phone" id="phone" required></label>
+                    <label>Organizaton Name* <input type="text" name="orgName" id="orgName" required></label>
+                    <label>Organization Description <input type="text" name="orgDesc" id="orgDesc"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label><input type="radio" name="audience" value="nonProfit">Non-Profit Membership (no fee)</label>
+                    <label><input type="radio" name="audience" value="bronze">Bronze Membership</label>
+                    <label><input type="radio" name="audience" value="silver">Silver Membership</label>
+                    <label><input type="radio" name="audience" value="gold">Gold Membership</label>
+                </fieldset>
+                <input type="hidden" name="date" id="dateTime">
+                <input type="submit" id="submitButton" value="Subscribe">
+            </form>
+            <section class="benefits">
+                <h2>Membership Benefits</h2>
+                <div class="non-profit">
+                    <h2>Non-Profit Membership</h2>
+                    <p>1. Access to the Coruscant Chamber of Commerce information guide, including upcoming and previous
+                        events
+                        and
+                        pricing</p>
+                    <p>2. Information on what to do in case of an emergency, or an invasion happening on Coruscant</p>
+                </div>
+                <div class="bronze">
+                    <h2>Bronze Membership</h2>
+                    <p>1. Access to All Non-Profit Benefits</p>
+                    <p>2. One free ticket to any event on Coruscant</p>
+                    <p>3. Prioty Seating at events</p>
+                </div>
+                <div class="silver">
+                    <h2>Silver Membership</h2>
+                    <p>1. Access to all Non-Profit and Bronze Benefits</p>
+                    <p>2. Priority Jedi Youngling training for your children and family</p>
+                    <p>3. Even more access to information, events, history, and the market, including the best places in
+                        your
+                        area
+                        to shop</p>
+                </div>
+                <div class="gold">
+                    <h2>Gold Membership</h2>
+                    <p>1. Access to all Non-Profit, Bronze, and Silver Benefits</p>
+                    <p>2. Free parking at events</p>
+                    <p>3. Intel on specific happenings in the clone wars, and the workings of the galactic republic</p>
+                    <p>4. Increased priority seating for all events, and increased priority training for younglings</p>
+                    <p>5. Free ticket to a total of three events throughout the year</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Last Modified:</p>
+            <p id="lastModified"></p>
+            <p>BYU-Idaho School Project</p>
+            <p id="date"></p>
+        </footer>
+    </div>
+</body>
+
+</html>

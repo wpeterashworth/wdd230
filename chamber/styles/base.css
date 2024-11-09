@@ -273,3 +273,96 @@ figcaption {
     color: var(--text-color1);
     font-weight: bold;
 }
+
+.weather-icon {
+    max-width: 100px;
+}
+
+.market-image {
+    max-width: 100px;
+}
+
+.jedi-temple-image {
+    max-width: 150px;
+}
+
+.benefits {
+    display: none;
+}
+
+.form-main fieldset {
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    margin: 30px;
+    padding: 30px;
+}
+
+.form-main legend {
+    color: var(--text-color1);
+    font-weight: bold;
+    font-size: 1.25em;
+    border: solid;
+    background-color: var(--header-color);
+}
+
+.form-main label {
+    display: block;
+    padding: 7px;
+    color: var(--text-color2);
+}
+
+.form-main input[type="text"],
+.form-main input[type="tel"],
+.form-main input[type="email"],
+.form-main input[type="url"],
+.form-main input[type="date"],
+.form-main select,
+.form-main input[type="number"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 90%;
+    max-width: 300px;
+}
+
+.form-main input[type="radio"],
+.form-main input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.form-main input[type="submit"] {
+    border-radius: 7px;
+    border: outset;
+    background-color: #eee;
+    background-image: linear-gradient(#eee, #fff);
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+
+.form-main input[type="submit"]:hover {
+    box-shadow: 1px 1px 4px black;
+}
+
+.form-main input:required {
+    border-right: solid 8px red;
+}
+
+.form-main input:required:valid {
+    border-right: solid 8px green;
+}
+
+.thankyou-page h1,
+h3 {
+    text-align: center;
+    color: var(--text-color1)
+}
