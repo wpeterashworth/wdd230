@@ -318,7 +318,8 @@ figcaption {
 .form-main input[type="url"],
 .form-main input[type="date"],
 .form-main select,
-.form-main input[type="number"] {
+.form-main input[type="number"],
+.form-main input[type="textarea"] {
     background-color: #eee;
     display: block;
     border: solid 1px #999;
