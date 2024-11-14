@@ -1,0 +1,95 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "wpeterashworth.github.io/wdd230/lesson01/holygrail.html",
+                    "title": "Holy Grail CSS Layout"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "wpeterashworth.github.io/wdd230/lesson02/designprincples.html",
+                    "title": "Design Principles Document"
+                },
+                {
+                    "url": "wpeterashworth.github.io/wdd230/lesson02/media-query.html",
+                    "title": "Media Queries"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": []
+        },
+        {
+            "lesson": "04",
+            "links": []
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "wpeterashworth.github.io/wdd230/lesson05/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "wpeterashworth.github.io/wdd230/lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "wpeterashworth.github.io/wdd230/lesson06/images/castle.webp",
+                    "title": "WebP Image"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "wpeterashworth.github.io/wdd230/lesson07/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "wpeterashworth.github.io/wdd230/lesson07/bom.html",
+                    "title": "Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "wpeterashworth.github.io/wdd230/lesson08/index.html",
+                    "title": "Form Build"
+                },
+                {
+                    "url": "wpeterashworth.github.io/wdd230/lesson08/tablebuild.html",
+                    "title": "Table Build"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "wpeterashworth.github.io/wdd230/lesson09/prophets.html",
+                    "title": "Prophets JSON Page"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": []
+        }
+    ]
+}
