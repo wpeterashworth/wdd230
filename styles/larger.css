@@ -85,6 +85,6 @@
     }
 
     .form-main {
-        display: block;
+        grid-row: 1/3;
     }
 }

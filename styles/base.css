@@ -183,10 +183,6 @@ button {
     padding: .3rem;
 }
 
-.form-main {
-    text-align: left;
-}
-
 #r {
     width: 180px;
     margin-bottom: 0;
@@ -199,7 +195,6 @@ button {
 
 #rangevalues {
     display: flex;
-    /* margin: 0 0 0 25px; */
     width: 200px;
 }
 
@@ -207,18 +202,15 @@ button {
     flex: 1 1 auto;
 }
 
-.form-main input:required {
-    border-right: solid 8px var(--accent-color);
-}
-
 .form-main input:required:valid {
     border-right: solid 8px green;
 }
 
-/* .form-main input:required:invalid {
+.form-main input:required:invalid {
     border-right: solid 8px red;
-} */
+}
 
 .form-main {
     margin: 50px 15px 20px;
+    text-align: left;
 }
