@@ -1,24 +1,33 @@
 const baseURL = "https://wpeterashworth.github.io/wdd230/"
 const linksURL = "https://wpeterashworth.github.io/wdd230/data/links.json"
-let activitiesSection = document.querySelector('.activities')
+const linksContainer = document.getElementById('links');
 
 async function getLinks() {
     const response = await fetch(linksURL)
     if (response.ok) {
         const data = await response.json()
-        displayLinks(data.weeks)
+        displayLinks(data.lessons)
     }
 }
 
 const displayLinks = (weeks) => {
     weeks.forEach(week => {
-        let weekNumber = document.createElement('p')
-        let link = document.createElement('a')
-        weekNumber.textContent = `Week ${week.lesson}:`
-        link.textContent = `${week.links.title}|`
-        link.setAttribute('src', week.links.url)
-        activitiesSection.appendChild(weekNumber)
-        activitiesSection.appendChild(link)
+        let weekLi = document.createElement('li')
+        weekLi.textContent = `Week ${week.lesson} `
+        week.links.forEach(link => {
+
+            let aLink = document.createElement('a')
+
+
+            aLink.href = link.url
+            aLink.textContent = ` | ${link.title}`
+
+            weekLi.appendChild(aLink)
+            linksContainer.appendChild(weekLi)
+
+        })
+
+
     });
 
 }
