@@ -1,124 +1,61 @@
 {
-    "members": [
+    "member": [
         {
-            "name": "Republic Bank of Coruscant",
-            "type": "Financial Institution",
+            "name": "Amazon",
             "membershipLevel": "gold",
-            "contact": {
-                "address": "2100 Banking District, Senate Plaza Level",
-                "phone": "+25-867-5309",
-                "website": "www.rbc.coruscant.gal",
-                "email": "contact@rbc.coruscant.gal"
-            },
-            "iconFile": "rbc-logo.holo",
-            "services": [
-                "Interplanetary Transfers",
-                "Credit Management",
-                "Empire-Approved Loans"
-            ]
+            "address": "325 9th Ave. N., Seattle, WA 98109-5210",
+            "phone": "1-888-280-4331",
+            "website": "www.amazon.com",
+            "logo": "images/amazon-logo.png"
         },
         {
-            "id": "CCB002",
-            "name": "Dex's Diner",
-            "type": "Restaurant",
+            "name": "eBay",
             "membershipLevel": "bronze",
-            "contact": {
-                "address": "532 CoCo Town District, Level 2312",
-                "phone": "+25-333-FOOD",
-                "website": "www.dexsdiner.coruscant.gal",
-                "email": "dex@dexsdiner.coruscant.gal"
-            },
-            "iconFile": "dex-diner.holo",
-            "services": [
-                "Traditional Cooking",
-                "Takeaway",
-                "Information Trading"
-            ]
+            "address": "2025 Hamilton Avenue San Jose, California 95125",
+            "phone": "(800) 322-9266",
+            "website": "www.eBay.com",
+            "logo": "images/ebay-logo.jpg"
         },
         {
-            "name": "Coruscant Museum of Galactic History",
-            "type": "Cultural Institution",
-            "membershipLevel": "non-profit",
-            "contact": {
-                "address": "100 Heritage Boulevard, Senate District",
-                "phone": "+25-MUSEUM",
-                "website": "www.cmgh.coruscant.gal",
-                "email": "info@cmgh.coruscant.gal"
-            },
-            "iconFile": "museum-logo.holo",
-            "services": [
-                "Exhibitions",
-                "Research",
-                "Educational Programs"
-            ]
-        },
-        {
-            "name": "SkyHigh Speeder Repairs",
-            "type": "Vehicle Maintenance",
+            "name": "Apple",
             "membershipLevel": "silver",
-            "contact": {
-                "address": "789 Industrial Sector, Level 1313",
-                "phone": "+25-SPEEDER",
-                "website": "www.skyhigh-repairs.coruscant.gal",
-                "email": "service@skyhigh-repairs.coruscant.gal"
-            },
-            "iconFile": "skyhigh-logo.holo",
-            "services": [
-                "Speeder Repairs",
-                "Custom Modifications",
-                "Parts Sales"
-            ]
+            "address": "One Apple Park Way; Cupertino, CA 95014, U.S.A",
+            "phone": "(800) MY-APPLE (800-692-7753)",
+            "website": "www.apple.com",
+            "logo": "images/apple-logo.png"
         },
         {
-            "name": "Galactic Communications Hub",
-            "type": "Technology Services",
+            "name": "Mountain Mike's Pizza",
+            "membershipLevel": "bronze",
+            "address": "26 Corporate Plaza, Suite 180, Newport Beach, CA 92660",
+            "phone": "+1 (888) 914-9661",
+            "website": "www.mountainmikespizza.com",
+            "email": "service@skyhigh-repairs.cor",
+            "logo": "images/mikes-pizza-logo.jpg"
+        },
+        {
+            "name": "Nintendo",
             "membershipLevel": "gold",
-            "contact": {
-                "address": "444 Tech District, Upper Level",
-                "phone": "+25-HOLO-COM",
-                "website": "www.gch.coruscant.gal",
-                "email": "support@gch.coruscant.gal"
-            },
-            "iconFile": "gch-logo.holo",
-            "services": [
-                "Holonet Services",
-                "Communication Systems",
-                "Data Storage"
-            ]
+            "address": "4600 150th Ave NE, Redmond, WA 98052",
+            "phone": "1-800-255-3700",
+            "website": "www.nintendo.com",
+            "logo": "images/Nintendo-Logo.png"
         },
         {
-            "name": "Senate District Medical Center",
-            "type": "Healthcare",
+            "name": "Sony",
             "membershipLevel": "silver",
-            "contact": {
-                "address": "1 Medical Plaza, Senate District",
-                "phone": "+25-MED-HELP",
-                "website": "www.sdmc.coruscant.gal",
-                "email": "info@sdmc.coruscant.gal"
-            },
-            "iconFile": "medical-center.holo",
-            "services": [
-                "Emergency Care",
-                "Bacta Treatment",
-                "Cybernetic Services"
-            ]
+            "address": "25 Madison Avenue, 26th Floor, New York, NY 10010-8601",
+            "phone": "1-212-833-6722",
+            "website": "www.sony.com",
+            "logo": "images/Sony-Logo.png"
         },
         {
-            "name": "1000 Republica Luxury Apartments",
-            "type": "Real Estate",
+            "name": "Kaiser Permanente",
             "membershipLevel": "gold",
-            "contact": {
-                "address": "1000 Republica Building, Senate District",
-                "phone": "+25-LUXURY",
-                "website": "www.1000republica.coruscant.gal",
-                "email": "concierge@1000republica.coruscant.gal"
-            },
-            "iconFile": "1000republica-logo.holo",
-            "services": [
-                "Luxury Housing",
-                "Concierge Services",
-                "Security"
-            ]
+            "address": "1 Kaiser Plaza, Oakland, CA 94612",
+            "phone": "(510) 271-5800",
+            "website": "www.kaiserpermanente.org",
+            "logo": "images/kaiser-permanente-logo.png"
         }
     ]
 }
