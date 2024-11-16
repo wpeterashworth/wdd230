@@ -1,33 +1,36 @@
 const baseURL = "https://wpeterashworth.github.io/wdd230/chamber/"
 const membersURL = "https://wpeterashworth.github.io/wdd230/chamber/data/members.json"
+const cards = document.querySelector("#members")
 
 async function getMembers() {
     const response = await fetch(membersURL)
     if (response.ok) {
         const data = await response.json()
-        displayMembers(data.members)
+        displayMembers(data.directory)
     }
 }
 
-const displayMembers = (members) => {
-    const cards = document.querySelector("#members")
+getMembers()
 
-    members.forEach((member) => {
-        const card = document.createElement("section")
+const displayMembers = (members) => {
+
+    members.forEach(member => {
+        let card = document.createElement("section")
+        let companyName = document.createElement("h3")
+        let membershipLevel = document.createElement("p")
+        let address = document.createElement("p")
+        let phone = document.createElement("p")
+        let website = document.createElement("a")
+
         card.setAttribute("class", "member")
-        const companyName = document.createElement("h3")
         companyName.textContent = member.company
-        const membershipLevel = document.createElement("p")
         membershipLevel.textContent = member.membershipLevel
-        const address = document.createElement("p")
         address.textContent = member.address
-        const phone = document.createElement("p")
         phone.textContent = member.phone
-        const website = document.createElement("a")
         website.setAttribute("href", `https://${member.website}`)
         website.textContent = member.website
 
-        const logo = document.createElement("img")
+        let logo = document.createElement("img")
         logo.setAttribute("src", member.logo)
 
         card.appendChild(logo)
@@ -54,6 +57,3 @@ function showList() {
     display.classList.add("list")
     display.classList.remove("grid")
 }
-
-getMembers()
-// This is a comment
