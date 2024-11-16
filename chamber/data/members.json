@@ -1,0 +1,124 @@
+{
+    "members": [
+        {
+            "name": "Republic Bank of Coruscant",
+            "type": "Financial Institution",
+            "membershipLevel": "gold",
+            "contact": {
+                "address": "2100 Banking District, Senate Plaza Level",
+                "phone": "+25-867-5309",
+                "website": "www.rbc.coruscant.gal",
+                "email": "contact@rbc.coruscant.gal"
+            },
+            "iconFile": "rbc-logo.holo",
+            "services": [
+                "Interplanetary Transfers",
+                "Credit Management",
+                "Empire-Approved Loans"
+            ]
+        },
+        {
+            "id": "CCB002",
+            "name": "Dex's Diner",
+            "type": "Restaurant",
+            "membershipLevel": "bronze",
+            "contact": {
+                "address": "532 CoCo Town District, Level 2312",
+                "phone": "+25-333-FOOD",
+                "website": "www.dexsdiner.coruscant.gal",
+                "email": "dex@dexsdiner.coruscant.gal"
+            },
+            "iconFile": "dex-diner.holo",
+            "services": [
+                "Traditional Cooking",
+                "Takeaway",
+                "Information Trading"
+            ]
+        },
+        {
+            "name": "Coruscant Museum of Galactic History",
+            "type": "Cultural Institution",
+            "membershipLevel": "non-profit",
+            "contact": {
+                "address": "100 Heritage Boulevard, Senate District",
+                "phone": "+25-MUSEUM",
+                "website": "www.cmgh.coruscant.gal",
+                "email": "info@cmgh.coruscant.gal"
+            },
+            "iconFile": "museum-logo.holo",
+            "services": [
+                "Exhibitions",
+                "Research",
+                "Educational Programs"
+            ]
+        },
+        {
+            "name": "SkyHigh Speeder Repairs",
+            "type": "Vehicle Maintenance",
+            "membershipLevel": "silver",
+            "contact": {
+                "address": "789 Industrial Sector, Level 1313",
+                "phone": "+25-SPEEDER",
+                "website": "www.skyhigh-repairs.coruscant.gal",
+                "email": "service@skyhigh-repairs.coruscant.gal"
+            },
+            "iconFile": "skyhigh-logo.holo",
+            "services": [
+                "Speeder Repairs",
+                "Custom Modifications",
+                "Parts Sales"
+            ]
+        },
+        {
+            "name": "Galactic Communications Hub",
+            "type": "Technology Services",
+            "membershipLevel": "gold",
+            "contact": {
+                "address": "444 Tech District, Upper Level",
+                "phone": "+25-HOLO-COM",
+                "website": "www.gch.coruscant.gal",
+                "email": "support@gch.coruscant.gal"
+            },
+            "iconFile": "gch-logo.holo",
+            "services": [
+                "Holonet Services",
+                "Communication Systems",
+                "Data Storage"
+            ]
+        },
+        {
+            "name": "Senate District Medical Center",
+            "type": "Healthcare",
+            "membershipLevel": "silver",
+            "contact": {
+                "address": "1 Medical Plaza, Senate District",
+                "phone": "+25-MED-HELP",
+                "website": "www.sdmc.coruscant.gal",
+                "email": "info@sdmc.coruscant.gal"
+            },
+            "iconFile": "medical-center.holo",
+            "services": [
+                "Emergency Care",
+                "Bacta Treatment",
+                "Cybernetic Services"
+            ]
+        },
+        {
+            "name": "1000 Republica Luxury Apartments",
+            "type": "Real Estate",
+            "membershipLevel": "gold",
+            "contact": {
+                "address": "1000 Republica Building, Senate District",
+                "phone": "+25-LUXURY",
+                "website": "www.1000republica.coruscant.gal",
+                "email": "concierge@1000republica.coruscant.gal"
+            },
+            "iconFile": "1000republica-logo.holo",
+            "services": [
+                "Luxury Housing",
+                "Concierge Services",
+                "Security"
+            ]
+        }
+    ]
+}
