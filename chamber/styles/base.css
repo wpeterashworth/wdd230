@@ -376,3 +376,28 @@ h3 {
     color: var(--text-color1);
     padding: 0px 20px 0px 20px;
 }
+
+/* Directory Page */
+
+#gridView {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 4;
+}
+
+#gridView section {
+    border: solid;
+}
+
+#gridView.hidden {
+    display: none;
+}
+
+#listView {
+    display: flex;
+    justify-content: center;
+}
+
+#listView.hidden {
+    display: none;
+}

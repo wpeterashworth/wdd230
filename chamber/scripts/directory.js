@@ -1,6 +1,9 @@
 const baseURL = "https://wpeterashworth.github.io/wdd230/chamber/"
 const membersURL = "https://wpeterashworth.github.io/wdd230/chamber/data/members.json"
-const cards = document.querySelector("#members")
+
+const gridContainer = document.querySelector('#gridView')
+const listContainer = document.querySelector('#listView')
+const toggleButton = document.querySelector('#toggleButton')
 
 async function getMembers() {
     const response = await fetch(membersURL)
@@ -15,14 +18,14 @@ getMembers()
 const displayMembers = (members) => {
 
     members.forEach(member => {
-        let card = document.createElement("section")
+        let listCard = document.createElement("section")
+        let gridCard = document.createElement("section")
         let companyName = document.createElement("h3")
         let membershipLevel = document.createElement("p")
         let address = document.createElement("p")
         let phone = document.createElement("p")
         let website = document.createElement("a")
 
-        card.setAttribute("class", "member")
         companyName.textContent = member.company
         membershipLevel.textContent = member.membershipLevel
         address.textContent = member.address
@@ -33,27 +36,22 @@ const displayMembers = (members) => {
         let logo = document.createElement("img")
         logo.setAttribute("src", member.logo)
 
-        card.appendChild(logo)
-        card.appendChild(companyName)
-        card.appendChild(address)
-        card.appendChild(phone)
-        card.appendChild(website)
-        cards.appendChild(card)
+        listCard.appendChild(logo)
+        listCard.appendChild(companyName)
+        listCard.appendChild(address)
+        listCard.appendChild(phone)
+        listCard.appendChild(website)
+        gridCard.appendChild(logo)
+        gridCard.appendChild(companyName)
+        gridCard.appendChild(address)
+        gridCard.appendChild(phone)
+        gridCard.appendChild(website)
+        gridContainer.appendChild(gridCard)
+        listContainer.appendChild(listCard)
     })
 }
 
-const gridBtn = document.querySelector("#gridBtn")
-const listBtn = document.querySelector("#listBtn")
-const display = document.querySelector("article")
-
-gridBtn.addEventListener("click", () => {
-    display.classList.add("grid")
-    display.classList.remove("list")
-})
-
-listBtn.addEventListener("click", showList)
-
-function showList() {
-    display.classList.add("list")
-    display.classList.remove("grid")
-}
+toggleButton.addEventListener('click', () => {
+    gridContainer.classList.toggle('hidden');
+    listContainer.classList.toggle('hidden');
+});
