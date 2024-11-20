@@ -1,9 +1,9 @@
 const baseURL = "https://wpeterashworth.github.io/wdd230/chamber/"
 const membersURL = "https://wpeterashworth.github.io/wdd230/chamber/data/members.json"
 
-const gridContainer = document.querySelector('#gridView')
-const listContainer = document.querySelector('#listView')
-const toggleButton = document.querySelector('#toggleButton')
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
 
 async function getMembers() {
     const response = await fetch(membersURL)
@@ -18,8 +18,8 @@ getMembers()
 const displayMembers = (members) => {
 
     members.forEach(member => {
-        let listCard = document.createElement("section")
-        let gridCard = document.createElement("section")
+        const memberCards = document.querySelector("#members")
+        let card = document.createElement("section")
         let companyName = document.createElement("h3")
         let membershipLevel = document.createElement("p")
         let address = document.createElement("p")
@@ -36,22 +36,24 @@ const displayMembers = (members) => {
         let logo = document.createElement("img")
         logo.setAttribute("src", member.logo)
 
-        listCard.appendChild(logo)
-        listCard.appendChild(companyName)
-        listCard.appendChild(address)
-        listCard.appendChild(phone)
-        listCard.appendChild(website)
-        gridCard.appendChild(logo)
-        gridCard.appendChild(companyName)
-        gridCard.appendChild(address)
-        gridCard.appendChild(phone)
-        gridCard.appendChild(website)
-        gridContainer.appendChild(gridCard)
-        listContainer.appendChild(listCard)
+        card.appendChild(logo)
+        card.appendChild(companyName)
+        card.appendChild(address)
+        card.appendChild(phone)
+        card.appendChild(website)
+        memberCards.appendChild(card)
     })
 }
 
-toggleButton.addEventListener('click', () => {
-    gridContainer.classList.toggle('hidden');
-    listContainer.classList.toggle('hidden');
+gridbutton.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
 });
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+}
