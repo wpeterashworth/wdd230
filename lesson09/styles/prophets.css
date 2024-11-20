@@ -5,6 +5,12 @@
     --accent-color2: #BBB193;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
 #cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
@@ -29,9 +35,5 @@ h1 {
 #content {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: var(--accent-color2);
-}
-
-body {
-    margin: 0;
-    padding: 0;
+    overflow-x: hidden;
 }
