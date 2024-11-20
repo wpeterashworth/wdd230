@@ -379,23 +379,38 @@ h3 {
 
 /* Directory Page */
 
-#gridView {
+.grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
 }
 
-#gridView section {
-    border: solid;
+.grid section {
+    border: ridge var(--header-color);
+    border-width: 7px;
+    padding: 15px;
+    background-color: var(--accent-color);
+    color: var(--text-color2);
 }
 
-#gridView.hidden {
-    display: none;
+.grid section p {
+    text-align: left;
 }
 
-#listView {
-    display: flex;
-    justify-content: center;
+#members a:hover {
+    text-decoration: underline;
 }
 
-#listView.hidden {
-    display: none;
+#members a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color2);
+    font-size: .8em;
+}
+
+#members section {
+    border: ridge var(--header-color);
+    border-width: 7px;
+    padding: 15px;
+    background-color: var(--accent-color);
+    color: var(--text-color2);
 }
