@@ -214,3 +214,7 @@ button {
     margin: 50px 15px 20px;
     text-align: left;
 }
+
+#weatherDesc {
+    text-transform: capitalize;
+}

@@ -1,8 +1,8 @@
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=40ab55ee19ebd6f2e875c4b6dd07e931"
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=43.82&lon=-111.79&units=imperial&appid=40ab55ee19ebd6f2e875c4b6dd07e931"
 
-let currentTemp = document.querySelector("#current-temp")
-let weatherIcon = document.querySelector("#weather-icon")
-let captionDesc = document.querySelector("figcaption")
+let weatherTemp = document.querySelector("#weatherTemp")
+let weatherIcon = document.querySelector("#weatherIcon")
+let weatherDesc = document.querySelector("#weatherDesc")
 
 async function apiFetch() {
     try {
@@ -20,12 +20,17 @@ async function apiFetch() {
     }
 }
 
+// function changeToUpperCase(desc) {
+//     desc.charAt(0).toUpperCase() + desc.slice(1)
+// }
+
 function displayResults(data) {
-    currentTemp.innerHTML = `${parseInt(data.main.temp.toFixed(0))}&deg;F`
+    weatherTemp.innerHTML = `${parseInt(data.main.temp.toFixed(0))}&deg;F`
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
     let desc = data.weather[0].description
     weatherIcon.setAttribute("src", iconsrc)
     weatherIcon.setAttribute("alt", "Weather Icon")
-    captionDesc.textContent = `${desc}`
+    weatherDesc.textContent = `${desc}`
 }
+
 apiFetch()
