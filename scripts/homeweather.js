@@ -20,9 +20,6 @@ async function apiFetch() {
     }
 }
 
-// function changeToUpperCase(desc) {
-//     desc.charAt(0).toUpperCase() + desc.slice(1)
-// }
 
 function displayResults(data) {
     weatherTemp.innerHTML = `${parseInt(data.main.temp.toFixed(0))}&deg;F`

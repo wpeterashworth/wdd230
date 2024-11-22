@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/header-footer.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <!-- <script src="scripts/windchill.js" defer></script> -->
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/chamberweather.js" defer></script>
     <title>Coruscant Chamber of Commerce</title>
 </head>
 
@@ -51,6 +53,10 @@
                     <img id="hero-image" src="images/coruscant-hero-large.webp"
                         alt="Picture of Galactic City in Coruscant">
                 </picture>
+                <div id="banner">
+                    <button id="bannerToggle">❌</button>
+                    <p>Join Us For a Meet and Greet Wednesday at 7:00 PM !!</p>
+                </div>
                 <h2 class="heading">Chamber Info</h2>
                 <hr>
             </div>
@@ -71,11 +77,12 @@
             </section>
             <section id="weatherCard">
                 <h2>Weather</h2>
-                <img class="weather-icon" src="images/weather-placeholder.webp" alt="weather icon placeholder">
+                <img id="weatherIcon" src="" alt="">
                 <p>Current Conditions: <span id="currentConditions"></span></p>
-                <p>Temperature: <span id="temperature">40</span>&deg;F</p>
-                <p>Current Wind: <span id="windspeed">4</span></p>
-                <p>Windchill: <span id="windchill"></span></p>
+                <p>Temperature: <span id="temperature"></span>&deg;F</p>
+                <p>Temperature Forecast - Next 3 Days: <span id="forecast"></span></p>
+                <!-- <p>Current Wind: <span id="windspeed"></span></p>
+                <p>Windchill: <span id="windchill"></span></p> -->
             </section>
             <h2 class="spotlight-heading">Company Spotlights</h2>
             <div class="spotlight spotlight1">
