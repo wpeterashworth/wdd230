@@ -337,6 +337,7 @@ figcaption {
     background-color: #eee;
     background-image: linear-gradient(#eee, #fff);
     width: 50%;
+    cursor: pointer;
     color: black;
     font-weight: bold;
     padding: 5px;
