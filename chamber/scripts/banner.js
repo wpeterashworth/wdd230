@@ -3,7 +3,7 @@ let bannerButton = document.querySelector("#bannerToggle")
 
 function showBanner() {
     const today = new Date().getDay()
-    const targetDays = [1, 2, 3, 5]
+    const targetDays = [1, 2, 3]
 
     if (targetDays.includes(today)) {
         banner.style.display = "block"
