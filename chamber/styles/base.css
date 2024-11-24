@@ -196,11 +196,11 @@ nav ul .active:hover {
 }
 
 #menu-button::before {
-    content: "Open";
+    content: "Open ";
 }
 
 #menu-button.open::before {
-    content: "Close";
+    content: "Close ";
 }
 
 #darkMode {
