@@ -248,3 +248,12 @@ nav ul.open {
     display: grid;
     margin-bottom: 15px;
 }
+
+a {
+    text-decoration: none;
+    color: var(--text-color1);
+}
+
+a:hover {
+    text-decoration: underline;
+}
