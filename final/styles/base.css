@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
-    --accent-color1: #F97068;
-    --accent-color2: #D1D646;
-    --accent-color3: #57C4E5;
-    --black: #212738;
-    --white: #EDF2EF;
+    --accent-color1: #ABA361;
+    --accent-color2: #994636;
+    --background-color: #F4D58D;
+    --header-color: #62929E;
+    --text-color1: black;
+    --text-color2: white;
 }
 
 #content {
     font-family: merriweather, lato, sans-serif;
-    background-color: var(--accent-color3);
-    color: var(--black);
+    background-color: var(--background-color);
+    color: var(--text-color1);
     overflow-x: hidden;
 }
 
@@ -20,16 +21,17 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
     text-align: center;
-    background-color: var(--accent-color1);
+    background-color: var(--accent-color2);
 }
 
 #movie-info p {
     padding: 15px;
-    background-color: var(--accent-color3);
+    background-color: var(--background-color);
     border: ridge;
     border-width: 6px;
     border-radius: 5px;
-    border-color: var(--accent-color2);
+    border-color: var(--accent-color1);
+    margin: 15px;
 }
 
 #movie-info img {
@@ -131,7 +133,7 @@ img:nth-child(12) {
 #movie-quotes p {
     grid-column: 1;
     padding: 25px;
-    background-color: var(--accent-color3);
+    background-color: var(--background-color);
     border: ridge;
     border-width: 6px;
     border-radius: 5px;
@@ -159,7 +161,7 @@ h1 {
     border: ridge;
     border-width: 6px;
     border-radius: 5px;
-    border-color: var(--accent-color2);
+    border-color: var(--accent-color1);
     font-weight: bold;
     margin: 20px;
 }
@@ -168,7 +170,66 @@ footer,
 header {
     text-align: center;
     border: ridge;
+    color: var(--white);
     border-color: var(--accent-color1);
     border-width: 6px;
-    background-color: var(--accent-color2);
+    background-color: var(--header-color);
+    background-image: url(wpeterashworth.github.io/wdd230/final/images/lotr_wallpaper_1.jpg);
+}
+
+nav ul {
+    padding-inline-start: 0px;
+    list-style-type: none;
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+    outline: none;
+    transition: 0.15s;
+    font-size: 1.15em;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+nav a:hover {
+    color: darkblue;
+}
+
+#menu {
+    cursor: pointer;
+    background-color: var(--accent-color1);
+    color: var(--black);
+    font-size: 16px;
+    border-radius: 7px;
+    border: outset;
+    background-image: linear-gradient(#eee, #fff);
+    width: 50%;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    max-width: 200px;
+    padding: 5px;
+}
+
+#menu:hover {
+    background-color: var(--accent-color3);
+    background-image: linear-gradient(#bbb, #ccc);
+}
+
+#menu::before {
+    content: "Open";
+}
+
+#menu.open::before {
+    content: "Close";
+}
+
+nav ul.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
