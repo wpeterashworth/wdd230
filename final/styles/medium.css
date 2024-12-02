@@ -6,3 +6,5 @@ main {
     display: grid;
     grid-template-columns: 4;
 } */
+
+@media screen and (min-width: 700px) {}

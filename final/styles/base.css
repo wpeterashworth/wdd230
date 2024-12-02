@@ -22,6 +22,7 @@
     grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
     text-align: center;
     background-color: var(--accent-color2);
+    padding: 20px;
 }
 
 #movie-info p {
@@ -150,9 +151,12 @@ img:nth-child(12) {
     display: block;
 }
 
-h1 {
+main h1 {
     text-align: center;
     padding: 20px;
+    color: var(--text-color2);
+    background-image: url(../images/lotr_wallpaper_1.jpg);
+    margin: 0;
 }
 
 #characters p {
@@ -174,7 +178,7 @@ header {
     border-color: var(--accent-color1);
     border-width: 6px;
     background-color: var(--header-color);
-    background-image: url(wpeterashworth.github.io/wdd230/final/images/lotr_wallpaper_1.jpg);
+
 }
 
 nav ul {
@@ -188,14 +192,12 @@ nav a {
     color: var(--black);
     cursor: pointer;
     outline: none;
-    transition: 0.15s;
-    font-size: 1.15em;
     font-weight: bold;
     font-size: .9em;
 }
 
 nav a:hover {
-    color: darkblue;
+    text-decoration: underline;
 }
 
 #menu {
@@ -232,4 +234,16 @@ nav ul.open {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+#hero-image {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    border: inset;
+}
+
+.hero {
+    display: grid;
+    margin-bottom: 15px;
 }
