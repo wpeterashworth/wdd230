@@ -168,6 +168,7 @@ main h1 {
     border-color: var(--accent-color1);
     font-weight: bold;
     margin: 20px;
+    background-color: var(--header-color);
 }
 
 footer,

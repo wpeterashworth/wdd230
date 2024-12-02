@@ -1,10 +1,5 @@
 const charactersURL = "https://wpeterashworth.github.io/wdd230/final/data/characters.JSON"
-const moviesURL = "https://wpeterashworth.github.io/wdd230/final/data/movies.JSON"
-const quotesURL = "https://wpeterashworth.github.io/wdd230/final/data/quotes.JSON"
-
 const characters = document.querySelector("#characters")
-const quotes = document.querySelector("#movie-quotes")
-const movieInfo = document.querySelector("#movie-info")
 
 async function apiFetchCharacters() {
     try {
@@ -12,7 +7,6 @@ async function apiFetchCharacters() {
         if (response.ok) {
             const characterData = await response.json()
             displayCharacterInfo(characterData)
-            console.log(characterData)
         }
         else {
             throw Error(await response.text())
@@ -23,115 +17,6 @@ async function apiFetchCharacters() {
     }
 }
 
-async function apiFetchMovies() {
-    try {
-        const response = await fetch(moviesURL)
-        if (response.ok) {
-            const movieData = await response.json()
-            console.log(movieData)
-            displayMovieInfo(movieData)
-        }
-        else {
-            throw Error(await response.text())
-        }
-    }
-    catch (error) {
-        console.log(error)
-    }
-}
-
-async function apiFetchQuotes() {
-    try {
-        const response = await fetch(quotesURL)
-        if (response.ok) {
-            const quoteData = await response.json()
-            console.log(quoteData)
-            displayQuotes(quoteData)
-        }
-        else {
-            throw Error(await response.text())
-        }
-    }
-    catch (error) {
-        console.log(error)
-    }
-}
-
-function displayQuotes(quoteData) {
-    let quote1 = document.createElement("p")
-    let quote2 = document.createElement("p")
-    let quote3 = document.createElement("p")
-    let quote4 = document.createElement("p")
-    let quote5 = document.createElement("p")
-    let quote6 = document.createElement("p")
-    let quote7 = document.createElement("p")
-    let quote8 = document.createElement("p")
-    let quote9 = document.createElement("p")
-    let quote10 = document.createElement("p")
-    let quote11 = document.createElement("p")
-    let quote12 = document.createElement("p")
-
-
-    quote1.textContent = `"${quoteData.docs[19].dialog}" - Gollum`
-    quote2.textContent = `"${quoteData.docs[86].dialog}" - Bilbo`
-    quote3.textContent = `"Even the smallest person can change the course of the future." - Galadriel`
-    quote4.textContent = `"${quoteData.docs[97].dialog}" - Frodo`
-    quote5.textContent = `"${quoteData.docs[601].dialog}" - Gandalf`
-    quote6.textContent = `"${quoteData.docs[410].dialog}" - Faramir`
-    quote7.textContent = `"${quoteData.docs[863].dialog}" - Arwen`
-    quote8.textContent = `"${quoteData.docs[135].dialog}" - Éowyn`
-    quote9.textContent = `"${quoteData.docs[256].dialog}" - Legolas`
-    quote10.textContent = `"${quoteData.docs[296].dialog}" - Aragorn`
-    quote11.textContent = `"${quoteData.docs[650].dialog}" "${quoteData.docs[651].dialog}" - Frodo and Sam`
-    quote12.textContent = `"I never thought I'd die fighting side by side with an elf." "How about side by side with a friend?" "Aye. I could do that." - Gimli and Legolas`
-
-    quotes.appendChild(quote1)
-    // quotes.appendChild(gollum)
-    quotes.appendChild(quote2)
-    // quotes.appendChild(bilbo)
-    quotes.appendChild(quote3)
-    // quotes.appendChild(galadriel)
-    quotes.appendChild(quote4)
-    // quotes.appendChild(frodo)
-    quotes.appendChild(quote5)
-    // quotes.appendChild(gandalf)
-    quotes.appendChild(quote6)
-    // quotes.appendChild(faramir)
-    quotes.appendChild(quote7)
-    // quotes.appendChild(arwen)
-    quotes.appendChild(quote8)
-    // quotes.appendChild(eowyn)
-    quotes.appendChild(quote9)
-    // quotes.appendChild(legolas)
-    quotes.appendChild(quote10)
-    // quotes.appendChild(aragorn)
-    quotes.appendChild(quote11)
-    // quotes.appendChild(samFrodo)
-    quotes.appendChild(quote12)
-    // quotes.appendChild(legolasGimli)
-}
-
-function displayMovieInfo(movieData) {
-    let fellowship = movieData.docs[6]
-    let towers = movieData.docs[5]
-    let king = movieData.docs[7]
-
-    let fellowshipData = document.createElement("p")
-    let towersData = document.createElement("p")
-    let kingData = document.createElement("p")
-
-    fellowshipData.textContent = `${fellowship.name} is ${fellowship.runtimeInMinutes} minutes long, and recieved $${fellowship.boxOfficeRevenueInMillions} million in box office revenue. The movie has won ${fellowship.academyAwardWins} academy awards.`
-    towersData.textContent = `${towers.name} is ${towers.runtimeInMinutes} minutes long, and recieved $${towers.boxOfficeRevenueInMillions} million in box office revenue. The movie has won ${towers.academyAwardWins} academy awards.`
-    kingData.textContent = `${king.name} is ${king.runtimeInMinutes} minutes long, and recieved $${king.boxOfficeRevenueInMillions} million in box office revenue. The movie has won ${king.academyAwardWins} academy awards.`
-
-    movieInfo.appendChild(fellowshipData)
-    //movieInfo.appendChild(fellowshipImg)
-    movieInfo.appendChild(towersData)
-    // movieInfo.appendChild(towersImg)
-    movieInfo.appendChild(kingData)
-    //movieInfo.appendChild(kingImg)
-
-}
 
 function displayCharacterInfo(characterData) {
     let Aragorn = characterData.docs[39]
@@ -186,5 +71,3 @@ function displayCharacterInfo(characterData) {
     characters.appendChild(samData)
 }
 apiFetchCharacters()
-apiFetchMovies()
-apiFetchQuotes()
