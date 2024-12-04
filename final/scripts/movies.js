@@ -27,9 +27,9 @@ function displayMovieInfo(movieData) {
     let towersData = document.createElement("p")
     let kingData = document.createElement("p")
 
-    fellowshipData.textContent = `${fellowship.name} is ${fellowship.runtimeInMinutes} minutes long, and recieved $${fellowship.boxOfficeRevenueInMillions} million in box office revenue. The movie has won ${fellowship.academyAwardWins} academy awards.`
-    towersData.textContent = `${towers.name} is ${towers.runtimeInMinutes} minutes long, and recieved $${towers.boxOfficeRevenueInMillions} million in box office revenue. The movie has won ${towers.academyAwardWins} academy awards.`
-    kingData.textContent = `${king.name} is ${king.runtimeInMinutes} minutes long, and recieved $${king.boxOfficeRevenueInMillions} million in box office revenue. The movie has won ${king.academyAwardWins} academy awards.`
+    fellowshipData.textContent = `${fellowship.name} is ${fellowship.runtimeInMinutes} minutes long, and recieved $${fellowship.boxOfficeRevenueInMillions} million in box office revenue, with a budget of $${fellowship.budgetInMillions} million. The movie has been nominated for ${fellowship.academyAwardNominations} academy awards and has won ${fellowship.academyAwardWins} of them. It has received a rating of ${fellowship.rottenTomatoesScore}/100 on rotten tomatoes.`
+    towersData.textContent = `${towers.name} is ${towers.runtimeInMinutes} minutes long, and recieved $${towers.boxOfficeRevenueInMillions} million in box office revenue, with a budget of $${towers.budgetInMillions} million. The movie has been nominated for ${towers.academyAwardNominations} academy awards and has won ${towers.academyAwardWins} of them. It has received a rating of ${towers.rottenTomatoesScore}/100 on rotten tomatoes.`
+    kingData.textContent = `${king.name} is ${king.runtimeInMinutes} minutes long, and recieved $${king.boxOfficeRevenueInMillions} million in box office revenue, with a budget of $${king.budgetInMillions} million. The movie has been nominated for ${king.academyAwardNominations} academy awards and has won ${king.academyAwardWins} of them. It has received a rating of ${king.rottenTomatoesScore}/100 on rotten tomatoes.`
 
     movieInfo.appendChild(fellowshipData)
     movieInfo.appendChild(towersData)

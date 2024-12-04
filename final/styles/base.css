@@ -151,7 +151,7 @@ img:nth-child(12) {
     display: block;
 }
 
-main h1 {
+main h2 {
     text-align: center;
     padding: 20px;
     color: var(--text-color2);
@@ -241,7 +241,14 @@ nav ul.open {
     margin: 0 auto;
     display: block;
     margin-top: 20px;
-    border: inset;
+    border: ridge;
+    border-width: 10px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--accent-color2);
+    max-width: auto-fit;
 }
 
 .hero {
