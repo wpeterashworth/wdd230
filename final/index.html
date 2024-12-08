@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - 
+    Peter Ashworth - Course Final Project">
+    <meta name="author" content="Peter Ashworth">
+    <meta property="og:title" content="WDD230 Course Final Project Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wpeterashworth.github.io/wdd230/final/index.html">
+    <title>Scoots Rental Company</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>Scoots Rental Company</h1>
+            <nav id="navMenu">
+                <button id="menu"> Menu</button>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="">Rentals</a></li>
+                    <li><a href="">Reservations</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <img class="cozumel-picture-1" src="images/cozumel_img3_large.webp" alt="picture of Cozumel">
+            </div>
+            <div id="banner">
+                <button id="bannerToggle">❌</button>
+                <p id="highTemp"></p>
+            </div>
+            <div class="call-to-action">
+                <p>Reserve Now</p>
+            </div>
+            <div class="rental-types">
+                <h3>Types of Rentals</h3>
+                <p>Honda Motor Scooters</p>
+                <p>Honda Metropolitan (49cc) - 1 person</p>
+                <p>Honda Dio (110cc) - 2 person</p>
+                <p>Honda PCX150 (149cc) - 2 person</p>
+                <p>Side-by-Side ATVs</p>
+                <p>Honda Pioneer 1000 - 4 person</p>
+                <p>Jeeps</p>
+                <p>Jeep Wrangler - 4 door manuel with A/C - 5 person</p>
+                <p>Jeep Wrangler - 2 door - open air - manuel - 4 person</p>
+            </div>
+            <img class="cozumel-picture-2" src="images/cozumel_img2.jpg" alt="picture of Cozumel coast">
+            <div id="weather">
+                <h3>Weather Information</h3>
+                <p>Location: Quintana Roo, Mexico | Island of Cozumel</p>
+                <p>Weather: <span id="weatherTemp"></span> - <span id="weatherDesc"></span></p>
+                <img id="weatherIcon" src="" alt="">
+                <p id="humidity"></p>
+                <p id="forecast"></p>
+            </div>
+            <img class="cozumel-picture-3" src="images/cozumel_img4.webp" alt="picture of Cozumel coast and buildings">
+        </main>
+        <footer>
+            <p>W. Peter Ashworth</p>
+            <p>WDD230 Final Project</p>
+            <a href="https://instagram.com"><img src="images/Instagram_icon.png" alt="instagram logo link"></a>
+            <a href="https://facebook.com"><img src="images/facebook_icon.png" alt="facebook logo link"></a>
+        </footer>
+    </div>
+</body>
+
+</html>

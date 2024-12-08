@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --accent-color: #C9E4CA;
+    --dark-color: #003804;
+    --accent-color2: #55828B;
+    --background-color: #E1F2FE;
+    --header-color: #98D2EB;
+    --text-color1: black;
+    --text-color2: white;
+}
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    font-family: merriweather, lato, sans-serif;
+}
+
+header,
+footer {
+    background-color: var(--header-color);
+    border: ridge;
+    border-width: 7px;
+    border-radius: 6px;
+    border-color: var(--accent-color2);
+    text-align: center;
+}
+
+#menu {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--text-color1);
+    font-size: 16px;
+    border-radius: 7px;
+    border: outset;
+    background-image: linear-gradient(#eee, #fff);
+    width: 50%;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    max-width: 200px;
+    padding: 5px;
+}
+
+#menu:hover {
+    background-color: var(--accent-color);
+    background-image: linear-gradient(#bbb, #ccc);
+}
+
+
+#menu::before {
+    content: "Open";
+}
+
+#menu.open::before {
+    content: "Close";
+}
+
+nav ul.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav {
+    background-color: var(--header-color);
+}
+
+
+nav ul {
+    padding-inline-start: 0px;
+    list-style-type: none;
+    display: none;
+}
+
+nav,
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.15s;
+    font-size: 1.15em;
+    color: var(--text-color1);
+}
+
+.active a {
+    text-decoration: underline;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.cozumel-picture-1 {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    transition: .4s;
+}
+
+.cozumel-picture-1:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.cozumel-picture-2 {
+    width: 40%;
+    height: auto;
+    max-width: 400px;
+}
+
+.cozumel-picture-3 {
+    height: auto;
+    width: 70%;
+    max-width: 600px;
+}
+
+.call-to-action {
+    padding: 10px;
+    border-style: solid;
+    border-color: var(--dark-color);
+    margin: 0 auto;
+    max-width: 40%;
+    background-color: var(--accent-color);
+    font-weight: bold;
+}
+
+#banner {
+    border: dashed;
+    color: var(--text-color1);
+    background-color: var(--header-color);
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+}
+
+#bannerToggle {
+    float: right;
+    background: none;
+    border: none;
+    padding: 5px;
+}
