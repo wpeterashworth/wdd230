@@ -30,11 +30,12 @@ footer {
     border-radius: 6px;
     border-color: var(--accent-color2);
     text-align: center;
+    padding: 10px;
 }
 
-#menu {
+#menu,
+.call-to-action button {
     cursor: pointer;
-    background-color: var(--accent-color);
     color: var(--text-color1);
     font-size: 16px;
     border-radius: 7px;
@@ -49,9 +50,9 @@ footer {
     padding: 5px;
 }
 
-#menu:hover {
-    background-color: var(--accent-color);
-    background-image: linear-gradient(#bbb, #ccc);
+#menu:active,
+.call-to-action button:active {
+    background-image: linear-gradient(#ccc, #ddd);
 }
 
 
@@ -80,8 +81,8 @@ nav ul {
     display: none;
 }
 
-nav,
-a {
+nav a,
+.attributions {
     text-decoration: none;
     cursor: pointer;
     outline: none;
@@ -94,42 +95,38 @@ a {
     text-decoration: underline;
 }
 
-li a:hover {
+a:hover {
     text-decoration: underline;
 }
 
 .cozumel-picture-1 {
-    max-width: 90%;
+    width: 80%;
     height: auto;
-    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
+    display: flex;
     display: block;
     transition: .4s;
-}
-
-.cozumel-picture-1:hover {
-    box-shadow: 0 0 50px #333;
+    max-width: 900px;
+    margin: 20px;
+    padding: 10px;
+    border: ridge;
+    border-color: var(--accent-color2);
+    border-width: 7px;
+    border-radius: 5px;
+    background-color: var(--accent-color);
 }
 
 .cozumel-picture-2 {
     width: 40%;
     height: auto;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .cozumel-picture-3 {
     height: auto;
     width: 70%;
-    max-width: 600px;
-}
-
-.call-to-action {
-    padding: 10px;
-    border-style: solid;
-    border-color: var(--dark-color);
-    margin: 0 auto;
-    max-width: 40%;
-    background-color: var(--accent-color);
-    font-weight: bold;
+    max-width: 550px;
 }
 
 #banner {
@@ -138,7 +135,10 @@ li a:hover {
     background-color: var(--header-color);
     font-weight: bold;
     text-align: center;
-    margin: 5px;
+    margin: 15px;
+    width: 95%;
+    max-width: 900px;
+    justify-self: center;
 }
 
 #bannerToggle {
@@ -146,4 +146,50 @@ li a:hover {
     background: none;
     border: none;
     padding: 5px;
+    cursor: pointer;
+}
+
+.instagram,
+.facebook {
+    height: auto;
+    max-width: 35px;
+}
+
+.cozumel-picture-2,
+.cozumel-picture-3 {
+    display: flex;
+    justify-self: center;
+    padding: 10px;
+    border: ridge;
+    border-color: var(--accent-color2);
+    border-width: 7px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: var(--accent-color);
+}
+
+.rental-types p:nth-child(3),
+.rental-types p:nth-child(7),
+.rental-types p:nth-child(9) {
+    font-weight: bold;
+    text-align: center;
+}
+
+hr {
+    width: 300px;
+}
+
+.rental-types,
+#weather {
+    margin: auto;
+    width: 75%;
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+#weather {
+    text-align: center;
 }
