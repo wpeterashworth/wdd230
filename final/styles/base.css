@@ -193,3 +193,62 @@ h3 {
 #weather {
     text-align: center;
 }
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.75em;
+    padding: 20px;
+}
+
+thead tr:nth-child(1) td {
+    background-color: grey;
+    padding: 15px;
+}
+
+thead tr:nth-child(2) td:nth-child(1) {
+    background-color: black;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: darkgrey;
+}
+
+tbody td {
+    border: 1px lightgray solid;
+    padding: 15px;
+}
+
+thead td {
+    padding: 15px;
+}
+
+.info {
+    margin: 20px;
+    text-align: center;
+}
+
+.scooter-image1,
+.scooter-image2,
+.scooter-image3 {
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+}
+
+figcaption {
+    text-align: center;
+    padding: 10px;
+}
