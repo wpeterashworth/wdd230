@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - 
+    Peter Ashworth - Course Final Project">
+    <meta name="author" content="Peter Ashworth">
+    <meta property="og:title" content="WDD230 Course Final Project Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wpeterashworth.github.io/wdd230/final/index.html">
+    <link rel="icon" href="images/favicon-final.ico">
+    <title>Scoots Rental Company</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>Scoots Rental Company</h1>
+            <nav id="navMenu">
+                <button id="menu"> Menu</button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li class="active"><a href="#">Reservations</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="reservations-main">
+            <form action="thankyou.html" method="get" class="reservation-form">
+                <fieldset>
+                    <legend>Rental Information</legend>
+                    <label>Date of Reservation* <input type="date" name="date" id="date" required></label>
+                    <div>Length of Reservation*</div>
+                    <label><input type="radio" name="length" value="half" required>Half Day (3 hrs)</label>
+                    <label><input type="radio" name="length" value="full">Full Day</label>
+                    <div>Scooter Rental Type*</div>
+                    <label><input type="radio" name="type" value="hondaM" required>Honda Metro Scooter</label>
+                    <label><input type="radio" name="type" value="hondaD">Honda Dio Scooter</label>
+                    <label><input type="radio" name="type" value="hondaP">Honda PCX150 Scooter</label>
+                    <label><input type="radio" name="type" value="hondaATV">Honda Pioneer ATV</label>
+                    <label><input type="radio" name="type" value="jeepW4">Jeep Wrangler - 4 door with a/c</label>
+                    <label><input type="radio" name="type" value="jeepW2">Jeep Wrangler - 2 door</label>
+                    <p>(If you would like to make a rental of multiple different types of scooters, please fill out
+                        multiple forms accordingly.) </p>
+                    <label>Number of Scooters <input type="number" name="amount" value="amount"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>Full Name* <input type="text" name="name" id="name" required></label>
+                    <label>Email* <input type="email" name="email" id="email" required></label>
+                    <label>Phone Number (in this format: ###-###-####)* <input type="tel" name="phone" id="phoneNumber"
+                            pattern="[0-9\-]{12,12}" required></label>
+                    <label>Home State or Country <input type="text" name="home" id="home"></label>
+                    <label>Cruise Line (if applicable) <input type="text" name="cruise" id="cruiseLine"></label>
+                    <label>Additional Comments (If you need to make a drop off, specify the location here) <textarea
+                            name="comments" id="comments"></textarea></label>
+                </fieldset>
+                <input type="submit" id="submitButton" value="Rent">
+            </form>
+            <div class="agreement-info">
+                <h3>Agreement Information</h3>
+                <p>A $50 security deposit is required to confirm reservations.
+                    A valid drivers license is required in hand at the time of rental.
+                    No one under the age of 12 years of age are allowed to ride on the scooters.
+                    Fuel charge is not included.
+                    Unlimited mileage.
+                    Liability insurance is included.
+                    Damage insurance is available for purchase.
+                    Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
+                    Payments are compatible via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.
+                    When finished with the scooters, rentals may be returned to either physical location.</p>
+            </div>
+        </main>
+        <footer>
+            <p>W. Peter Ashworth</p>
+            <p>WDD230 Final Project</p>
+            <a class="attributions" href="attributions.html">Attributions Page</a>
+            <p></p>
+            <a href="https://instagram.com"><img class="instagram" src="images/Instagram_icon.png"
+                    alt="instagram logo link"></a>
+            <a href="https://facebook.com"><img class="facebook" src="images/facebook_icon.png"
+                    alt="facebook logo link"></a>
+        </footer>
+    </div>
+</body>
+
+</html>
