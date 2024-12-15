@@ -43,4 +43,8 @@
     .scooter-image3 {
         grid-column: 3;
     }
+
+    table {
+        max-width: 700px;
+    }
 }
