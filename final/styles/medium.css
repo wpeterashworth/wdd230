@@ -1,4 +1,4 @@
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 850px) {
 
     .instagram,
     .facebook {
@@ -12,11 +12,11 @@
     }
 
     .cozumel-picture-2 {
-        max-width: 550px;
+        max-width: 350px;
     }
 
     .cozumel-picture-3 {
-        max-width: 700px;
+        max-width: 500px;
     }
 
     .scooter-images {

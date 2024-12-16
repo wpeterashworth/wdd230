@@ -35,6 +35,11 @@ footer {
 
 footer {
     font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+header {
+    margin-bottom: 20px;
 }
 
 footer p {
@@ -110,11 +115,9 @@ a:hover {
 .cozumel-picture-1 {
     width: 80%;
     height: auto;
-    align-self: center;
-    justify-self: center;
     display: block;
     max-width: 900px;
-    margin: 20px;
+    margin: 0 auto;
     padding: 10px;
     border: ridge;
     border-color: var(--accent-color2);
@@ -126,13 +129,13 @@ a:hover {
 .cozumel-picture-2 {
     width: 50%;
     height: auto;
-    max-width: 450px;
+    max-width: 400px;
 }
 
 .cozumel-picture-3 {
     height: auto;
     width: 70%;
-    max-width: 550px;
+    max-width: 500px;
 }
 
 #banner {
@@ -164,13 +167,12 @@ a:hover {
 .cozumel-picture-2,
 .cozumel-picture-3 {
     display: block;
-    justify-self: center;
+    margin: 0 auto;
     padding: 10px;
     border: ridge;
     border-color: var(--accent-color2);
     border-width: 7px;
     border-radius: 5px;
-    margin: 20px;
     background-color: var(--accent-color);
 }
 
