@@ -33,6 +33,14 @@ footer {
     padding: 10px;
 }
 
+footer {
+    font-size: 1.2rem;
+}
+
+footer p {
+    font-weight: bold;
+}
+
 #menu,
 .call-to-action button {
     cursor: pointer;
@@ -116,7 +124,7 @@ a:hover {
 }
 
 .cozumel-picture-2 {
-    width: 40%;
+    width: 50%;
     height: auto;
     max-width: 450px;
 }
@@ -230,6 +238,15 @@ tbody td {
 .info {
     margin: 20px;
     text-align: center;
+    display: block;
+    justify-self: center;
+    padding: 20px;
+    border: ridge;
+    border-color: var(--accent-color2);
+    border-width: 7px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: var(--accent-color);
 }
 
 .scooter-image1,
@@ -342,6 +359,19 @@ a {
     font-size: .9rem;
 }
 
-.main-home {
+.main-home2 {
     background-image: url(https://wpeterashworth.github.io/wdd230/final/images/palm_leaf.webp)
+}
+
+#weather,
+.rental-types {
+    display: block;
+    justify-self: center;
+    padding: 20px;
+    border: ridge;
+    border-color: var(--accent-color2);
+    border-width: 7px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: var(--accent-color);
 }
