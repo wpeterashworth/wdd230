@@ -341,3 +341,7 @@ a {
 .reservations-main p {
     font-size: .9rem;
 }
+
+.main-home {
+    background-image: url(https://wpeterashworth.github.io/wdd230/final/images/palm_leaf.webp)
+}
