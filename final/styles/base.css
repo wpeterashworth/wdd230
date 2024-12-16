@@ -236,17 +236,10 @@ tbody td {
 }
 
 .info {
-    margin: 20px;
-    text-align: center;
-    display: block;
-    justify-self: center;
-    padding: 20px;
-    border: ridge;
-    border-color: var(--accent-color2);
-    border-width: 7px;
-    border-radius: 5px;
-    margin: 20px;
-    background-color: var(--accent-color);
+    padding: 30px;
+    text-align: left;
+    margin: auto;
+    text-indent: 15px;
 }
 
 .scooter-image1,
@@ -353,6 +346,12 @@ a {
     display: block;
     text-align: center;
     padding: 5px 50px;
+    border: ridge;
+    border-color: var(--accent-color2);
+    border-width: 7px;
+    border-radius: 5px;
+    margin: 30px;
+    background-color: var(--accent-color);
 }
 
 .reservations-main p {
