@@ -129,13 +129,13 @@ a:hover {
 .cozumel-picture-2 {
     width: 50%;
     height: auto;
-    max-width: 400px;
+    max-width: 250px;
 }
 
 .cozumel-picture-3 {
     height: auto;
     width: 70%;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 #banner {
@@ -188,9 +188,15 @@ hr {
 
 .rental-types,
 #weather {
-    margin: auto;
-    width: 75%;
     text-align: left;
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    border: ridge;
+    border-color: var(--accent-color2);
+    border-width: 7px;
+    border-radius: 5px;
+    background-color: var(--accent-color);
 }
 
 h3 {
@@ -361,19 +367,6 @@ a {
 
 .main-home2 {
     background-image: url(https://wpeterashworth.github.io/wdd230/final/images/palm_leaf.webp)
-}
-
-#weather,
-.rental-types {
-    display: block;
-    justify-self: center;
-    padding: 20px;
-    border: ridge;
-    border-color: var(--accent-color2);
-    border-width: 7px;
-    border-radius: 5px;
-    margin: 20px;
-    background-color: var(--accent-color);
 }
 
 .thanks {

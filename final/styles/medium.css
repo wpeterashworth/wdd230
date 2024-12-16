@@ -1,14 +1,9 @@
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 700px) {
 
     .instagram,
     .facebook {
         height: auto;
         max-width: 50px;
-    }
-
-    .rental-types,
-    #weather {
-        width: 60%;
     }
 
     .cozumel-picture-2 {
@@ -56,4 +51,32 @@
         padding: 15px;
     }
 
+    .main-home2 {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .rental-types,
+    #weather,
+    .cozumel-picture-2,
+    .cozumel-picture-3 {
+        grid-column: 2;
+    }
+
+    .rental-types {
+        grid-row: 1;
+    }
+
+    .cozumel-picture-2 {
+        grid-row: 2;
+    }
+
+    #weather {
+        grid-row: 3;
+    }
+
+    .cozumel-picture-3 {
+        grid-row: 4;
+    }
 }
