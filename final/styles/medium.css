@@ -81,6 +81,7 @@
     }
 
     .info {
+        color: black;
         margin: 50px;
         border: ridge;
         border-color: var(--accent-color2);

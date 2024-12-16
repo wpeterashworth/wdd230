@@ -34,7 +34,6 @@ footer {
 }
 
 footer {
-    font-size: 1.2rem;
     margin-top: 20px;
 }
 
@@ -44,12 +43,14 @@ header {
 
 footer p {
     font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
 }
 
 #menu,
 .call-to-action button {
     cursor: pointer;
-    color: var(--text-color1);
+    color: black;
     font-size: 16px;
     border-radius: 7px;
     border: outset;
@@ -101,7 +102,7 @@ nav a,
     outline: none;
     transition: 0.15s;
     font-size: 1.15em;
-    color: var(--text-color1);
+    color: black;
 }
 
 .active a {
@@ -140,7 +141,7 @@ a:hover {
 
 #banner {
     border: dashed;
-    color: var(--text-color1);
+    color: black;
     background-color: var(--header-color);
     font-weight: bold;
     text-align: center;
@@ -244,6 +245,7 @@ tbody td {
 }
 
 .info {
+    color: var(--text-color1);
     padding: 30px;
     text-align: left;
     margin: auto;
@@ -267,6 +269,7 @@ tbody td {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .call-to-action a:hover {
@@ -284,7 +287,7 @@ a {
 
 .reservations-main legend,
 .contact-main legend {
-    color: #445ba9;
+    color: var(--text-color1);
     padding: 0 .5rem;
     font-weight: bold;
 }
@@ -301,7 +304,7 @@ a {
 
 .reservations-main div {
     padding-top: 1rem;
-    color: #445ba9;
+    color: var(--text-color1);
     font-size: .9rem;
     font-weight: bold;
 }
@@ -338,7 +341,7 @@ a {
     background-color: #eee;
     background-image: linear-gradient(#eee, #fff);
     width: 50%;
-    color: var(--text-color1);
+    color: black;
     font-weight: bold;
     padding: 5px;
     margin: 0 auto;
@@ -375,6 +378,14 @@ a {
     background-color: var(--accent-color);
 }
 
+.agreement-info p {
+    color: black;
+}
+
+.agreement-info h3 {
+    color: black;
+}
+
 .reservations-main p {
     font-size: .9rem;
 }
@@ -404,4 +415,26 @@ iframe {
 
 .contact-us {
     text-align: center;
+}
+
+#darkMode {
+    position: absolute;
+    top: 16px;
+    right: 10px;
+}
+
+#darkMode::before {
+    content: "Dark"
+}
+
+#darkMode.dark::before {
+    content: "Light"
+}
+
+fieldset p {
+    color: var(--text-color1);
+}
+
+.contact-main {
+    color: var(--text-color1);
 }
