@@ -144,10 +144,9 @@ a:hover {
     background-color: var(--header-color);
     font-weight: bold;
     text-align: center;
-    margin: 15px;
     width: 80%;
     max-width: 900px;
-    justify-self: center;
+    margin: 0 auto;
 }
 
 #bannerToggle {
@@ -375,4 +374,13 @@ a {
     border-radius: 5px;
     margin: 20px;
     background-color: var(--accent-color);
+}
+
+.thanks {
+    text-align: center;
+}
+
+.beach-image {
+    display: block;
+    margin: 0 auto;
 }
