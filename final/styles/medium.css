@@ -79,4 +79,13 @@
     .cozumel-picture-3 {
         grid-row: 4;
     }
+
+    .info {
+        margin: 50px;
+        border: ridge;
+        border-color: var(--accent-color2);
+        border-width: 7px;
+        border-radius: 5px;
+        background-color: var(--accent-color);
+    }
 }
