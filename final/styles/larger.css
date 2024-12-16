@@ -78,4 +78,9 @@
         grid-row: 1;
         max-width: 250px;
     }
+
+    .reservations-main fieldset,
+    .contact-main fieldset {
+        margin: 20px 100px;
+    }
 }

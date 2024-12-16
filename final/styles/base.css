@@ -273,21 +273,26 @@ a {
     text-decoration: none;
 }
 
-.reservations-main fieldset {
+.reservations-main fieldset,
+.contact-main fieldset {
     margin: 2rem 0;
-    border: 1px solid lightgrey;
+    border: 2px solid lightgrey;
     border-radius: 6px;
     padding: .5rem 20%;
+    margin: 20px;
 }
 
-.reservations-main legend {
+.reservations-main legend,
+.contact-main legend {
     color: #445ba9;
     padding: 0 .5rem;
     font-weight: bold;
 }
 
 .reservations-main label,
-.reservations-main textarea {
+.reservations-main textarea,
+.contact-main label,
+.contact-main textarea {
     display: block;
     padding-top: 1rem;
     font-size: .9rem;
@@ -302,11 +307,15 @@ a {
 }
 
 .reservations-main input[type="text"],
+.contact-main input[type="text"],
 .reservations-main input[type="tel"],
+.contact-main input[type="tel"],
 .reservations-main input[type="email"],
+.contact-main input[type="email"],
 .reservations-main input[type="date"],
 .reservations-main input[type="number"],
-.reservations-main textarea {
+.reservations-main textarea,
+.contact-main textarea {
     background-color: #eee;
     display: block;
     border: solid 1px #999;
@@ -322,7 +331,8 @@ a {
     margin-right: 6px;
 }
 
-.reservations-main input[type="submit"] {
+.reservations-main input[type="submit"],
+.contact-main input[type="submit"] {
     border-radius: 7px;
     border: outset;
     background-color: #eee;
@@ -337,15 +347,18 @@ a {
     max-width: 300px;
 }
 
-.reservations-main input[type="submit"]:hover {
+.reservations-main input[type="submit"]:hover,
+.contact-main input[type="submit"]:hover {
     box-shadow: 1px 1px 4px black;
 }
 
-.reservations-main input:required {
+.reservations-main input:required,
+.contact-main input:required {
     border-right: solid 8px red;
 }
 
-.reservations-main input:required:valid {
+.reservations-main input:required:valid,
+.contact-main input:required:valid {
     border-right: solid 8px green;
 }
 
@@ -377,4 +390,18 @@ a {
 .beach-image {
     display: block;
     margin: 0 auto;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.contact-header {
+    text-align: center;
+}
+
+.contact-us {
+    text-align: center;
 }

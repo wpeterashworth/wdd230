@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="WDD 230 - Web Frontend Development - 
+    Peter Ashworth - Course Final Project">
+    <meta name="author" content="Peter Ashworth">
+    <meta property="og:title" content="WDD230 Course Final Project Contact Us Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wpeterashworth.github.io/wdd230/final/contact.html">
+    <link rel="icon" href="images/favicon-final.ico">
+    <title>Scoots Rental Company</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/hamburger.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>Scoots Rental Company</h1>
+            <nav id="navMenu">
+                <button id="menu"> Menu</button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li class="active"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contact-main">
+            <div class="contact-us-form">
+                <h2 class="contact-header">Send Us a Message!</h2>
+                <form>
+                    <fieldset>
+                        <legend>Your Contact Info</legend>
+                        <label>Full Name* <input type="text" name="name" id="name" required></label>
+                        <label>Email* <input type="email" name="email" id="email" required></label>
+                        <label>Phone Number* <input type="tel" name="phone" id="phoneNumber" pattern="[0-9\-]{7,20}"
+                                required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your Message</legend>
+                        <label><textarea name="message" id="message"></textarea></label>
+                    </fieldset>
+                    <input type="submit" id="submitButton" value="Send">
+                </form>
+            </div>
+            <h2 class="contact-header">Our Location</h2>
+            <hr>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119579.3302414655!2d-87.02467215679013!3d20.512207640487773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1734384368445!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-us">
+                <h2 class="contact-header">Our Information</h2>
+                <p>cozumelscooters@fictitiousemail.com</p>
+                <p>123-COZUMEL</p>
+                <p>San Miguel de Cozumel, Quintana Roo, Mexico</p>
+            </div>
+        </main>
+        <footer>
+            <p>W. Peter Ashworth</p>
+            <p>WDD230 Final Project</p>
+            <a class="attributions" href="attributions.html">Attributions Page</a>
+            <p></p>
+            <a href="https://instagram.com"><img class="instagram" src="images/Instagram_icon.png"
+                    alt="instagram logo link"></a>
+            <a href="https://facebook.com"><img class="facebook" src="images/facebook_icon.png"
+                    alt="facebook logo link"></a>
+        </footer>
+    </div>
+</body>
+
+</html>
