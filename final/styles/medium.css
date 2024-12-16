@@ -47,4 +47,13 @@
     table {
         max-width: 700px;
     }
+
+    thead td {
+        padding: 15px;
+    }
+
+    tbody td {
+        padding: 15px;
+    }
+
 }

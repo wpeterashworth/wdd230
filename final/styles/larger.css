@@ -1,9 +1,16 @@
 @media screen and (min-width: 900px) {
     .cozumel-picture-1:hover {
         box-shadow: 0 0 50px #333;
+        transition: .4s;
     }
 
     .main-home {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .main-home2 {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
@@ -77,5 +84,9 @@
     .scooter-image3 {
         grid-row: 1;
         max-width: 250px;
+    }
+
+    .main-home2 {
+        background-image: url(https://wpeterashworth.github.io/wdd230/final/images/palm_leaf.jpg)
     }
 }

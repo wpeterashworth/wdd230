@@ -104,9 +104,7 @@ a:hover {
     height: auto;
     align-self: center;
     justify-self: center;
-    display: flex;
     display: block;
-    transition: .4s;
     max-width: 900px;
     margin: 20px;
     padding: 10px;
@@ -136,7 +134,7 @@ a:hover {
     font-weight: bold;
     text-align: center;
     margin: 15px;
-    width: 95%;
+    width: 80%;
     max-width: 900px;
     justify-self: center;
 }
@@ -157,7 +155,7 @@ a:hover {
 
 .cozumel-picture-2,
 .cozumel-picture-3 {
-    display: flex;
+    display: block;
     justify-self: center;
     padding: 10px;
     border: ridge;
@@ -198,7 +196,7 @@ table {
     border-collapse: collapse;
     text-align: center;
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 90%;
 }
 
 caption {
@@ -209,7 +207,7 @@ caption {
 
 thead tr:nth-child(1) td {
     background-color: grey;
-    padding: 15px;
+    padding: 10px;
 }
 
 thead tr:nth-child(2) td:nth-child(1) {
@@ -227,11 +225,6 @@ tbody tr:nth-child(even) {
 
 tbody td {
     border: 1px lightgray solid;
-    padding: 15px;
-}
-
-thead td {
-    padding: 15px;
 }
 
 .info {
