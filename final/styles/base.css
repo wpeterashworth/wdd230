@@ -47,7 +47,7 @@ footer p {
 }
 
 #menu,
-.call-to-action button {
+.call-to-action .button {
     cursor: pointer;
     color: black;
     font-size: 16px;
@@ -61,11 +61,12 @@ footer p {
     margin-bottom: 20px;
     max-width: 200px;
     padding: 5px;
+    text-align: center;
 }
 
 #menu:active,
-.call-to-action button:active {
-    background-image: linear-gradient(#ccc, #ddd);
+.call-to-action .button:hover {
+    background-image: linear-gradient(#ddd, #eee);
 }
 
 
