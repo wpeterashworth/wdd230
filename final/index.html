@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preload">
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/banner.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
@@ -40,8 +41,11 @@
         <main id="main-home-page">
             <div class="main-home">
                 <div class="hero">
-                    <img class="cozumel-picture-1" src="images/cozumel_img3_large.webp" width="200" height="200"
-                        alt="picture of Cozumel" loading="lazy">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="images/cozumel_img3_small.webp">
+                        <img class="cozumel-picture-1" src="images/cozumel_img3_large.webp" width="200" height="200"
+                            alt="picture of Cozumel">
+                    </picture>
                 </div>
                 <div id="banner">
                     <button id="bannerToggle">❌</button>
