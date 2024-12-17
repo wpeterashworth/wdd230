@@ -76,7 +76,6 @@
     .scooter-image2,
     .scooter-image3 {
         grid-row: 1;
-        max-width: 250px;
     }
 
     .reservations-main fieldset,

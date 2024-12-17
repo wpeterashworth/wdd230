@@ -254,7 +254,6 @@ tbody td {
 .scooter-image1,
 .scooter-image2,
 .scooter-image3 {
-    max-width: 300px;
     height: auto;
     margin: 0 auto;
     display: block;

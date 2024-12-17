@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
 
     .instagram,
     .facebook {
@@ -24,7 +24,6 @@
     .scooter-image2,
     .scooter-image3 {
         grid-row: 1;
-        max-width: 200px;
     }
 
     .scooter-image1 {
