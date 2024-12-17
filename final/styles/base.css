@@ -141,6 +141,7 @@ a:hover {
 
 #banner {
     border: dashed;
+    font-weight: 550;
     color: black;
     background-color: var(--header-color);
     text-align: center;
